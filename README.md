@@ -289,13 +289,6 @@ For academic or demo collaboration or project discussion, please use the reposit
 ├── skinnaoweb/
 │   ├── index.html
 │   └── other frontend assets
-├── assets/
-│   └── screenshots/
-│       ├── home-interface.png
-│       ├── upload-and-camera-view.png
-│       ├── nao-camera-capture-view.jpeg
-│       ├── nao-camera-result-nevus.jpeg
-│       └── diagnosis-result-bcc.jpeg
 ├── requirements.txt
 ├── .gitignore
 └── README.md
