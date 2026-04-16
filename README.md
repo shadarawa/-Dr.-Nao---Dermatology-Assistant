@@ -144,3 +144,185 @@ The upstream model page also includes a diagnostic use disclaimer, so any use of
 ```bash
 git clone https://github.com/shadarawa/-Dr.-Nao---Dermatology-Assistant
 cd skin_nao_demo
+
+### 2. Create and activate a virtual environment
+
+Windows
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+Linux / macOS
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Download the model weights
+
+Download the required trained model weights from the original source:
+
+https://huggingface.co/iamhmh/derm-cnn-ham10000
+
+Then place the downloaded model file in the local path expected by the prediction code, and update the path in the source code if needed for your environment.
+
+> Note: the model file is intentionally not included in this repository.
+
+### 5. Configure local paths and device specific settings
+
+Before running the project, update local configuration values inside the code such as:
+
+- `NAO_IP`
+- `PYTHON2_PATH`
+- `NAO_CAMERA_SERVER_URL`
+- `YOUR_BACKEND_IP`
+- any local SDK or runtime paths
+
+Example placeholders:
+
+```python
+NAO_IP = "YOUR_NAO_IP"
+PYTHON2_PATH = r"C:\Path\To\Python27\python.exe"
+NAO_CAMERA_SERVER_URL = "http://YOUR_NAO_CAMERA_SERVER_IP:5000/snapshot"
+```
+
+### 6. Run the backend
+
+From the project directory, run the backend server:
+
+```bash
+uvicorn skin_nao_demo.main:app --reload
+```
+
+### 7. Open the web interface
+
+Open the frontend file from the `skinnaoweb` folder in your browser, or serve it locally using a simple static server if needed.
+
+---
+
+## Notes for NAO Integration
+
+This project includes a NAO oriented interaction pipeline. To use it correctly, you may need:
+
+- a configured NAO robot or virtual environment
+- compatible Python and SDK setup for NAO communication
+- correct network IP configuration
+- proper local runtime paths for robot communication scripts
+
+Because NAO environments differ between machines, some paths and settings must be adjusted manually for your device.
+
+---
+
+## What Is Included in This Repository
+
+Included:
+
+- source code
+- frontend interface
+- backend logic
+- prediction pipeline code
+- NAO interaction scripts
+- screenshots
+- documentation
+
+Not included:
+
+- pre trained model weights
+- runtime logs
+- temporary uploads
+- captured user images
+- private environment files
+
+---
+
+## Contributors
+
+This project was developed by:
+
+- shadarawa
+- ghayda-njaafreh
+
+---
+
+## Academic / Demonstration Context
+
+This project was developed as an academic style prototype demonstrating how:
+
+- humanoid robotics
+- AI based image classification
+- interactive web systems
+- medical themed assistive interfaces
+
+can be combined into one integrated demonstration platform.
+
+It is especially suitable for:
+
+- university demos
+- academic exhibitions
+- robotics presentations
+- AI demonstration events
+
+---
+
+## Future Improvements
+
+Possible future directions include:
+
+- improved UI and UX design
+- live NAO voice interaction enhancements
+- better deployment packaging
+- configurable model loading
+- multi model comparison
+- safer and more modular medical AI demo workflows
+- stronger environment configuration handling
+
+---
+
+## Citation / Acknowledgment
+
+If you use or adapt this project for an academic demonstration, please also acknowledge the original upstream model source:
+
+iamhmh / derm-cnn-ham10000  
+https://huggingface.co/iamhmh/derm-cnn-ham10000
+
+---
+
+## Contact
+
+For academic or demo collaboration or project discussion, please use the repository issues section or your preferred GitHub contact method.
+
+---
+
+## Project Structure
+
+```text
+.
+├── nao.py
+├── nao_camera_server/
+│   └── server.py
+├── skin_nao_demo/
+│   ├── inference.py
+│   ├── labels.json
+│   ├── main.py
+│   ├── model.py
+│   ├── nao_speaker.py
+│   ├── predictor.py
+│   └── test_predictor.py
+├── skinnaoweb/
+│   ├── index.html
+│   └── other frontend assets
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+
