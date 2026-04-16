@@ -134,7 +134,7 @@ The upstream model page also includes a diagnostic use disclaimer, so any use of
  
 ## Setup Instructions
 1. Clone the repository
-git clone https://github.com/ghayda-njaafreh/skin_nao_demo.git
+git clone https://github.com/shadarawa/-Dr.-Nao---Dermatology-Assistant
 cd skin_nao_demo
 2. Create and activate a virtual environment
 
