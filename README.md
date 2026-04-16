@@ -60,8 +60,6 @@ The system is designed for educational demonstration purposes only and is intend
 <img width="1473" height="896" alt="image" src="https://github.com/user-attachments/assets/66aac2ed-bfcc-43ee-b1d9-7718b39ca2e5" />
 
 
-### Diagnosis Result
-
 
 ###  admin page
 <img width="1028" height="787" alt="image" src="https://github.com/user-attachments/assets/1c8eb673-46e3-4e12-ac8c-612cc0cf4a31" />
