@@ -43,16 +43,21 @@ The system is designed for educational demonstration purposes only and is intend
 <img width="1713" height="864" alt="image" src="https://github.com/user-attachments/assets/cfff461a-dcca-46b6-8ebc-777b18a2ad6b" />
 
 
-### Upload and Camera View
+### Upload and result View
+<img width="1741" height="916" alt="image" src="https://github.com/user-attachments/assets/d4461d9a-cded-4dab-ad74-08c78572ff9e" />
+<img width="1694" height="832" alt="image" src="https://github.com/user-attachments/assets/71c7e657-9d26-49fd-a7fa-d786a7e68c9f" />
 
 
 
 ### NAO Camera Capture View
 
+<img width="1705" height="831" alt="image" src="https://github.com/user-attachments/assets/b8341234-2c37-4098-a84c-471e5a2c56a8" />
+<img width="1609" height="789" alt="image" src="https://github.com/user-attachments/assets/778d7768-b041-4902-8d53-9345296d2bfa" />
 
 
 ### NAO Camera Result
 
+<img width="1473" height="896" alt="image" src="https://github.com/user-attachments/assets/66aac2ed-bfcc-43ee-b1d9-7718b39ca2e5" />
 
 
 ### Diagnosis Result
@@ -64,7 +69,8 @@ The system is designed for educational demonstration purposes only and is intend
 
 
 ---
-
+### video tutorial
+https://drive.google.com/file/d/1IBy1_i3tBsj_oRGafgVte41f2RhrIHpW/view?usp=sharing
 
 ## System Workflow
 The user opens the web interface.
@@ -94,7 +100,7 @@ A NAO compatible explanation or speech output can be triggered as part of the de
 This project uses a pre trained skin lesion classification model from:
 
 iamhmh / derm-cnn-ham10000
-https://huggingface.co/iamhmh/derm-cnn-ham10000
+ https://huggingface.co/iamhmh/derm-cnn-ham10000
 
 The project uses that model as part of an educational demonstration workflow for skin lesion image analysis. The original model page states that the model weights are licensed under CC BY-NC 4.0 and the code is licensed under MIT. Please review the original source and its license terms before reuse or redistribution.
 
@@ -258,9 +264,40 @@ Possible future directions include:
 
 If you use or adapt this project for an academic demonstration, please also acknowledge the original upstream model source:
 
-iamhmh / derm-cnn-ham10000
+iamhmh / derm-cnn-ham10000 
+
 https://huggingface.co/iamhmh/derm-cnn-ham10000
 
 ##  Contact
 
 For academic or demo collaboration or project discussion, please use the repository issues section or your preferred GitHub contact method.
+
+
+## Project Structure
+
+```text
+.
+├── nao.py
+├── nao_camera_server/
+│   └── server.py
+├── skin_nao_demo/
+│   ├── inference.py
+│   ├── labels.json
+│   ├── main.py
+│   ├── model.py
+│   ├── nao_speaker.py
+│   ├── predictor.py
+│   └── test_predictor.py
+├── skinnaoweb/
+│   ├── index.html
+│   └── other frontend assets
+├── assets/
+│   └── screenshots/
+│       ├── home-interface.png
+│       ├── upload-and-camera-view.png
+│       ├── nao-camera-capture-view.jpeg
+│       ├── nao-camera-result-nevus.jpeg
+│       └── diagnosis-result-bcc.jpeg
+├── requirements.txt
+├── .gitignore
+└── README.md
