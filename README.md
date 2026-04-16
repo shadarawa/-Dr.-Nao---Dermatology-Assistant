@@ -39,6 +39,8 @@ The system is designed for educational demonstration purposes only and is intend
 
 ### Home Interface
 
+<img width="1834" height="807" alt="image" src="https://github.com/user-attachments/assets/1c800a71-8c0a-41d7-9d0b-5bcb177133a7" />
+<img width="1713" height="864" alt="image" src="https://github.com/user-attachments/assets/cfff461a-dcca-46b6-8ebc-777b18a2ad6b" />
 
 
 ### Upload and Camera View
@@ -54,6 +56,10 @@ The system is designed for educational demonstration purposes only and is intend
 
 
 ### Diagnosis Result
+
+
+###  admin page
+<img width="1028" height="787" alt="image" src="https://github.com/user-attachments/assets/1c8eb673-46e3-4e12-ac8c-612cc0cf4a31" />
 
 
 
